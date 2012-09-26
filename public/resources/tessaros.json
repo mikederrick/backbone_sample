@@ -1,0 +1,50 @@
+{
+  "name": "Tessaros",
+  "type": "Bar and Grill",
+  "id": "2604791",
+  "addresses": [
+    {
+      "addressType": "Home",
+      "address": "4601 Liberty Ave",
+      "city": " Pittsburgh",
+      "state": "PENNSYLVANIA",
+      "zipCode": "15224"
+    }
+  ],
+  "phones": [
+    {
+      "number": "(412) 682-6809",
+      "phoneType": "Work"
+    }
+  ],
+  "drinks": [
+    {
+      "price": "$3.00",
+      "name": "Shocktop"
+    },
+    {
+      "price": "$4.50",
+      "name": "Magic Hat #9"
+    }
+  ],
+  "entrees": [
+    {
+      "price": "$8.49",
+      "name": "Barbecue burger and Fries"
+    },
+    {
+      "price": "$8.50",
+      "name": "Deli Burger"
+    }
+  ],
+  "appetizers": [
+    {
+      "price": "$4.99",
+      "name": "Tossed Salad"
+    },
+    {
+      "price": "$6.99",
+      "name": "Caeser Salad"
+    }
+  ]
+}

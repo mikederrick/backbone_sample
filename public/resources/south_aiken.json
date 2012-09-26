@@ -1,0 +1,50 @@
+{
+  "name": "South Aiken",
+  "type": "Bar and Grill",
+  "id": "2604791",
+  "addresses": [
+    {
+      "addressType": "Home",
+      "address": "815 South Aiken Avenue ",
+      "city": " Pittsburgh",
+      "state": "PENNSYLVANIA",
+      "zipCode": "15232"
+    }
+  ],
+  "phones": [
+    {
+      "number": "(412) 872-2548",
+      "phoneType": "Work"
+    }
+  ],
+  "drinks": [
+    {
+      "price": "$2.00",
+      "name": "Yeungling"
+    },
+    {
+      "price": "$2.50",
+      "name": "Sunset Wheat"
+    }
+  ],
+  "entrees": [
+    {
+      "price": "$6.49",
+      "name": "Cheeseburger and Fries"
+    },
+    {
+      "price": "$7.95+",
+      "name": "Cheese Pizza"
+    }
+  ],
+  "appetizers": [
+    {
+      "price": "$4.99",
+      "name": "Cheese Sticks"
+    },
+    {
+      "price": "$6.99",
+      "name": "Nachos"
+    }
+  ]
+}

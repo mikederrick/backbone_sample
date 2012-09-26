@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="../css/bootstrap.css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+</head>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="#">My Restaurants</a>
+          <div class="nav-collapse collapse" id="user-logged-in">
+            <p class="navbar-text pull-right">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<body>
+
+<!-- Front Page -->
+
+<div id="sidebar" class="span3">  
+    <div class="well sidebar-nav">
+        <h3>Pittsburgh Eats</h3>
+        <ul id="restaurant-list" class="nav nav-list">
+            <li class="nav-header">Bars and Restaraunts</li>
+        </ul>
+    </div>
+</div>
+<div id="content" class="span12">
+    <div class="hero-unit" id="welcome-box">
+        <h2>Login</h2>
+        <form id="login-form">
+          <input type="text" placeholder="username..." id="backbone-username">
+          <span class="help-block">Just click the login button for now...</span>
+          <input type="password" placeholder="password..." id="backbone-password"></br></br>
+          <button class="btn btn-large btn-primary" type="button" id="login-button">Login</button>
+        </form>
+    </div>
+</div>
+
+<!-- Item Templates -->
+<script type="text/template" id="restaurant-list-item">
+	<a href='#restaurants/<%= id %>'><%= name %></a>
+</script>
+
+<script type="text/template" id="entree-list-item">
+  <td><%= name %></td> <td><%= price %></td>
+</script>
+
+<script type="text/template" id="appetizer-list-item">
+  <td><%= name %></td> <td><%= price %></td>
+</script>
+
+<script type="text/template" id="drink-list-item">
+  <td><%= name %></td> <td><%= price %></td>
+</script>
+
+
+
+<!-- Tab Template -->
+
+<script type="text/template" id="restaurant-details">
+    <div class="form-left-col">
+        <ul class="nav nav-tabs" id="tab-view">
+          <li class="active"><a href="#basic" data-toggle="tab">Basic Info</a></li>
+          <li><a href='#appetizers' data-toggle="tab">Appetizers</a></li>
+          <li><a href='#entrees' data-toggle="tab">Entrees</a></li>
+          <li><a href='#drinks' data-toggle="tab">Drinks</a></li>
+        </ul>
+    </div>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade active in" id="basic">
+          <div class="span3">
+            <img src="../resources/dinner.jpeg" class="img-rounded">
+          </div>
+      <div class="span3">
+            <dl>
+              <dt>Name</dt>
+              <dd><%= name %></dd>
+            </dl>
+            <dl>
+              <dt>Type</dt>
+              <dd><%= type %></dd>
+            </dl>
+            <dl>
+              <dt>Address</dt>
+              <dd><%= addresses[0].address %></br>
+                  <%= addresses[0].city %>, <%= addresses[0].state %>, <%= addresses[0].zipCode %></dd>
+            </dl>
+            <dl>
+              <dt>Phone</dt>
+              <dd><%= phones[0].number %> 
+            </dl>
+          </div> 
+      </div>
+      <div class="tab-pane fade" id="drinks">
+        <div class="span12">
+          <table class="table table-hover" id="drinks-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="entrees">
+        <div class="span12">
+          <table class="table table-hover" id="entrees-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="appetizers">
+        <div class="span12">
+          <table class="table table-hover" id="appetizers-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+</script>
+
+<!-- JavaScript -->
+<script src="../lib/jquery.js"></script>
+<script src="../lib/underscore.js"></script>
+<script src="../lib/backbone.js"></script>
+<script src="../lib/bootstrap.js"></script>
+<script src="../js/models.js"></script>
+<script src="../js/collections.js"></script>
+<script src="../js/views.js"></script>
+<script src="../js/router.js"></script>   
+
+</body>
+</html>
