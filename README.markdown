@@ -19,7 +19,7 @@ You will need Ruby installed on your machine.
 From a command prompt, type the following commands:
 
 *  _gem install bundler_ (Installs the bundler gem -- this is used to
-   pull down all of the other gems needed for the tests)
+   pull down all of the other gems needed for the sinatra application)
 * _bundle_ (This will install all the necessary gem files to run the
   tests)
 * _ruby application.rb_ (Invoke the ruby interpreter and start up the
