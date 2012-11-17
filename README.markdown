@@ -22,5 +22,5 @@ From a command prompt, type the following commands:
    pull down all of the other gems needed for the sinatra application)
 * _bundle_ (This will install all the necessary gem files to run the
   tests)
-* _ruby application.rb_ (Invoke the ruby interpreter and start up the
+* _rackup_ (Invoke the ruby interpreter and start up the
   app with sinatra)
